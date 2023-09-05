@@ -3,28 +3,78 @@
 <!-- Lab 02 page-->
 
 <html lang="en">
-    <table>
-        <thead>
-          <tr>
-            <th></th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td></td>
-            <td></td>
-          </tr>
-        </tfoot>
-      </table>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="" content="">
+    <meta name="" content="">
+    <meta name="author" content="Charlie Francesconi">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
+    <title>Lab 02</title>
+    <style>
+      table, th, td {
+        border: 1px solid White;
+        text-align: center;
+        table-layout: center;
+      }
+      /* Taken from W3 schools for dark website and better font*/
+      body {
+          background-color: black;
+          color: white;
+          /* I already knew how to do this because I love lexend deca*/
+          font-family: 'Lexend', sans-serif, ;
+      }
+      /* Taken from W3 schools to center images and text */
+      h1 {text-align: center;}
+      h3 {text-align: center;}
+      p {text-align: center;}
+      .center {
+          margin-left: auto;
+          margin-right: auto;
+      }
+    </style>
+    </head>
+    <body>
+    <h1>Camp Schedule!</h1>
+    <table class="center">
+      <thead>
+        <tr>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>0530-1030</b><br> Sunrise Summit Hike</td>
+          <td><b>0700-1200</b><br> Backpack to Waterfalls</td>
+          <td><b>0600-1030</b><br> Summit Circle Hike</td>
+          <td rowspan="2"><b>0700-1500</b><br> Backpack to Lake</td>
+          <td><b>0530-1000</b><br> Solo Hike</td>
+        </tr>
+        <tr>
+          <td><b>1200-1500</b><br> Survival Skills Class</td>
+          <td colspan="2"><b>1200-1600</b><br> Waterfall Swimming, Fishing, & Kayaking</td>
+          <td><b>1200-1600</b><br> Camp Pack Up</td>
+          
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td><b>1700-2000</b><br> Dinner & Cribbage</td>
+          <td><b>1700-2100</b><br> Set up Overnight Camp</td>
+          <td><b>1700-2200</b><br> Dinner & D&D</td>
+          <td><b>1700-2200</b><br> Dinner & Skits</td>
+          <td><b>1700</b><br> Camp Ends :(</td>
+        </tr>
+      </tfoot>
+    </table>
+    <p>We have lots of exciting events planned this summer and we are excited for
+      all campers to participate! Downtime between activities is for campers to 
+      enjoy nature on their own and explore camp. Tuesday and Wednesday campers 
+      are permitted to select from one of three activities the prefer. Thursday
+      is the largest backpacking evolution of camp and campers will be provided
+      backpacking meals for lunch.</p>
+    </body>
 </html>
