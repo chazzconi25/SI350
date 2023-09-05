@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<!-- Lab 02 page-->
+
+<html lang="en">
+
+<!-- CSS and meta information-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Charlie Francesconi">
+  <link rel="stylesheet" href="../styles.css">
+  <title>Lab 02</title>
+  <style>
+    body {
+    text-align: center;
+    }
+  </style>
+</head>
+
+
+<body>
+    <!-- Website title -->
+    <h1>Register for Camp!</h1>
+    <form method="post" action="submit.cgi">
+        <label for="formname">Name:</label>
+        <input type="text" name="name" size="25" id="formname"
+               maxlength="30" placeholder="Johnny Appleseed"><br>
+        <label for="email">Email (Required):</label>
+        <input type="email" name="email" id="email"
+                placeholder="jappleseed@apple.com" required><br>
+        <label for="password" title="Optional: if you would like to modify your camp reservation at a later time"> 
+            Create Password *Optional*:</label>
+        <input type="password" name="password" id="password"><br><br>
+        <label >Select which midday activites you are most interested in:</label><br>
+        <label for="activity">Waterfall Swimming:</label>
+        <input type="checkbox" name="activity" id="activity">
+        <label for="activity">Fishing:</label>
+        <input type="checkbox" name="activity" id="activity">
+        <label for="activity">Kayaking:</label>
+        <input type="checkbox" name="activity" id="activity"><br><br>
+        <label >Select the option that best describes your diet:</label><br>
+        <label for="diet">Omnivore:</label>
+        <input type="radio" name="diet" id="diet">
+        <label for="diet">Pescatarian:</label>
+        <input type="radio" name="diet" id="diet">
+        <label for="diet">Vegitarian:</label>
+        <input type="radio" name="diet" id="diet"><br><br>
+        <label >Select your backpacking ability:</label><br>
+        <select name="ability" id="ability">
+            <option value="beginner">Beginner (never hiked before)</option>
+            <option value="advanced">Advanced (completed multiple day hikes)</option>
+            <option value="expert">Expert (backpacked and camped overnight)</option>
+        </select><br><br>
+        <textarea name="textareaex" rows="3" cols="25">Anything else we should know? Let us know here!</textarea><br>
+        <input type="hidden" name="type" value="class">
+        <input type="hidden" name="event" value="4">
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Clear Form">
+      </form>
+      <a href="index.html">Return to camp website page</a>
+</body>
+
+</html>
