@@ -1,0 +1,18 @@
+/* Import lexend */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;400&display=swap');
+
+/* Taken from W3 schools for dark website and better font*/
+body {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    /* I already knew how to do this because I love lexend deca*/
+    font-family: 'Lexend Deca';
+}
+/* Taken from W3 schools to center images and text */
+h1 {text-align: center;}
+h3 {text-align: center;}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
