@@ -3,16 +3,33 @@
 
 /* Taken from W3 schools for dark website and better font*/
 body {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(20, 20, 20);
     color: white;
     /* I already knew how to do this because I love lexend deca*/
     font-family: 'Lexend Deca';
 }
+
 /* Taken from W3 schools to center images and text */
 h1 {text-align: center;}
 h3 {text-align: center;}
 .center {
-    display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Taken from W3 schools to fix link colors*/
+/* unvisited link */
+a:link {
+    color: skyblue;
+}
+
+/* visited link */
+a:visited {
+    color: hotpink;
+}
+
+table, th, td {
+    border: 1px solid White;
+    text-align: center;
+    table-layout: center;
 }
