@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<!-- Lab 02 page-->
+
+<html lang="en">
+
+<!-- CSS and meta information-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Charlie Francesconi">
+  <link rel="stylesheet" href="../styles.css">
+  <title>Camp Registration</title>
+  <style>
+    body {
+    text-align: center;
+    }
+    datalist {
+      color: white;
+    }
+  </style>
+</head>
+
+
+<body>
+  <!-- Website title -->
+  <h1>Register for Camp!</h1>
+  <form method="post" action="submit.cgi">
+      <label for="formname">Name:</label>
+      <input type="text" name="name" size="25" id="formname"
+              maxlength="30" placeholder="Johnny Appleseed"><br>
+      <label for="email">Email (Required):</label>
+      <input type="email" name="email" id="email"
+              placeholder="jappleseed@apple.com" required><br>
+      <label for="password" title="Optional: if you would like to modify your camp reservation at a later time"> 
+          Create Password *Optional*:</label>
+      <input type="password" name="password" id="password"><br><br>
+      <fieldset style="display:inline-block;">
+        <legend>Select which midday activites you are most interested in:</legend>
+        <label for="activity">Waterfall Swimming:</label>
+        <input type="checkbox" name="Swimming" id="Swimming"><br>
+        <label for="activity">Fishing:</label>
+        <input type="checkbox" name="Fishing" id="Fishing"><br>
+        <label for="activity">Kayaking:</label>
+        <input type="checkbox" name="Kayaking" id="Kayaking"><br>
+      </fieldset><br><br>
+      <fieldset style="display:inline-block;">
+        <legend>Select the option that best describes your diet:</legend>
+        <label for="diet">Omnivore:</label>
+        <input type="radio" name="Omnivore" id="diet"><br>
+        <label for="diet">Pescatarian:</label>
+        <input type="radio" name="Pescatarian" id="diet"><br>
+        <label for="diet">Vegitarian:</label>
+        <input type="radio" name="Vegitarian" id="diet"><br>
+      </fieldset><br>
+      <br><label>Select your backpacking ability:</label><br>
+      <select name="hikingability" id="ability">
+          <option value="beginner">Beginner (never hiked before)</option>
+          <option value="advanced">Advanced (completed multiple day hikes)</option>
+          <option value="expert">Expert (backpacked and camped overnight)</option>
+      </select><br><br>
+      <br><label>Select your swimming ability:</label><br>
+      <input list="swimability" name="swimmertype" id="swimmertype">
+      <datalist id="swimability">
+        <option value="Rock (can't swim)">
+        <option value="Beginner (can float and tread water)">
+        <option value="Advanced (can swim 500m and tread water)">
+        <option value="Expert (can swim >500m and tread for 30 mins)">
+      </datalist><br><br>
+      <textarea name="comments" rows="3" cols="25">Anything else we should know? Let us know here!</textarea><br>
+      <br><label>How excited are you for camp?</label><br>
+      <input type="range" id="excitment" name="excitment" min="0" max="10"><br><br>
+      <input type="hidden" name="recipient" value="sgilroy@usna.edu" />
+      <input type="submit" value="Submit Form">
+      <input type="reset" value="Clear Form">
+    </form>
+    <a href="index.html">Return to camp website page</a>
+    <h3>Note! This form must be submitted by <time><time datetime="2023-05-01">May 1, 2023</time> to guarantee a slot at camp!</h3>
+</body>
+
+</html>
