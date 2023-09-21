@@ -1,1 +1,3 @@
-Charlie Francesconi	chazz@me.com	testpass	swimming,kayaking	Pescatarian	expert	I want this to work plz	8
+UGH	UGH@UGH.com	UGHGUGUHGUHUGUH	kayaking	Pescatarian	expert	AAAAA	8
+Test	Test@tess.tes	asdiubasdovchsdboviusb	swimming,fishing,kayaking	Omnivore	beginner	asjfaspifbasiovbsd	2
+fuck	f@f		swimming,kayaking	Pescatarian	advanced	gghhgh	10

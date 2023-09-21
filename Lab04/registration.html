@@ -9,7 +9,7 @@
   <meta charset="utf-8" />
   <meta name="author" content="Charlie Francesconi">
   <link rel="stylesheet" href="../styles.css">
-  <title>Camp Registration2</title>
+  <title>Camp Registration</title>
   <style>
     body {
     text-align: center;
@@ -24,7 +24,7 @@
 <body>
   <!-- Website title -->
   <h1>Register for Camp!</h1>
-  <form method="post" action="https://www.usna.edu/cgi-bin/yform.php">
+  <form method="post" action="submit.php">
       <label for="formname">Name:</label>
       <input type="text" name="name" size="25" id="formname"
               maxlength="30" placeholder="Johnny Appleseed"><br>
@@ -37,23 +37,23 @@
       <fieldset style="display:inline-block;">
         <legend>Select which midday activites you are most interested in:</legend>
         <label for="activity">Waterfall Swimming:</label>
-        <input type="checkbox" name="Swimming" id="Swimming"><br>
+        <input type="checkbox" name="swimming" id="swimming"><br>
         <label for="activity">Fishing:</label>
-        <input type="checkbox" name="Fishing" id="Fishing"><br>
+        <input type="checkbox" name="fishing" id="fishing"><br>
         <label for="activity">Kayaking:</label>
-        <input type="checkbox" name="Kayaking" id="Kayaking"><br>
+        <input type="checkbox" name="kayaking" id="kayaking"><br>
       </fieldset><br><br>
       <fieldset style="display:inline-block;">
         <legend>Select the option that best describes your diet:</legend>
         <label for="diet">Omnivore:</label>
-        <input type="radio" name="Omnivore" id="diet"><br>
+        <input type="radio" name="omni" id="omni"><br>
         <label for="diet">Pescatarian:</label>
-        <input type="radio" name="Pescatarian" id="diet"><br>
+        <input type="radio" name="pesca" id="pesca"><br>
         <label for="diet">Vegitarian:</label>
-        <input type="radio" name="Vegitarian" id="diet"><br>
+        <input type="radio" name="vegi" id="vegi"><br>
       </fieldset><br>
       <br><label>Select your backpacking ability:</label><br>
-      <select name="hikingability" id="ability">
+      <select name="ability" id="abilityhikingability">
           <option value="beginner">Beginner (never hiked before)</option>
           <option value="advanced">Advanced (completed multiple day hikes)</option>
           <option value="expert">Expert (backpacked and camped overnight)</option>
@@ -68,8 +68,8 @@
       </datalist><br><br>
       <textarea name="comments" rows="3" cols="25">Anything else we should know? Let us know here!</textarea><br>
       <br><label>How excited are you for camp?</label><br>
-      <input type="range" id="excitment" name="excitment" min="0" max="10"><br><br>
-      <input type="hidden" name="recipient" value="m251806@usna.edu" />
+      <input type="range" id="excitement" name="excitement" min="0" max="10"><br><br>
+      <input type="hidden" name="recipient" value="" />
       <input type="submit" value="Submit Form">
       <input type="reset" value="Clear Form">
     </form>
