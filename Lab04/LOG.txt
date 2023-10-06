@@ -1,3 +1,24 @@
-DIE CIMPUTER	DIE@TODEATH	IhatEYOU*&^%(&*%(&*%^(59857865	fishing,kayaking	Pescatarian	beginner	AAAAAA DIE DIE DIE DIE	10
-Name	Email	Password	Activities	diet	Hiking Ability	Comments	Excitment LevelDIE CIMPUTER	DIE@TODEATH	IhatEYOU*&^%(&*%(&*%^(59857865	fishing,kayaking	Pescatarian	beginner	AAAAAA DIE DIE DIE DIE	10
-DIE CIMPUTER	DIE@TODEATH	IhatEYOU*&^%(&*%(&*%^(59857865	fishing,kayaking	Pescatarian	beginner	AAAAAA DIE DIE DIE DIE	10
+Name	Email	Password	Activities	diet	Hiking Ability	Swimming Ability	Comments	Excitment Level
+Charlie Fran	c@fran	noPass2	kayaking	omni	beginner	Advanced (can swim 500m and tread water)	Somehting generic about camp&&testing newline	10
+Gary Fran	g@fran	Gfran7	swimming,fishing,kayaking	omni	expert	Beginner (can float and tread water)	Lets hike!!	9
+Beth Ward	b@ward	Bward5	swimming	omni	advanced	Expert (can swim >500m and tread for 30 mins)	How much swimming is there?	0
+Mad C	m@c	Pass123	fishing	pesca	beginner	Advanced (can swim 500m and tread water)	Excited!	10
+Ben Fran	b@fran	Bfran5	swimming,fishing,kayaking	vegi	advanced	Beginner (can float and tread water)	nothing	1
+Chazz Fran	c@fran	nopasS01	swimming	vegi	expert	Expert (can swim >500m and tread for 30 mins)	Oops I'm actually a vegitarian	7
+sdkajnfsdjh 	ksldjfh@khsdflkj	hjkjhH5	swimming,kayaking	pesca	expert	Beginner (can float and tread water)	DIE	10
+Sean Gilroy	sgilroy@usne.edu	ljLKJ98	fishing	omni	expert	Rock (can't swim)	Anything else we should know? Let us know here!	5
+hgvm ku	lkj@lkj		Array,	vegi	advanced	Rock (can't swim)	NO	0
+hgvm ku	lkj@lkj		Array,	vegi	advanced	Rock (can't swim)	NO	0
+hgvm ku	lkj@lkj		Array,	vegi	advanced	Rock (can't swim)	NO	0
+hgvm ku	lkj@lkj		Array,	vegi	advanced	Rock (can't swim)	NO	0
+hgvm ku	lkj@lkj		swimming	vegi	advanced	Rock (can't swim)	NO	0
+hgvm ku	lkj@lkj		Array,fishing	vegi	advanced	Rock (can't swim)	NO	0
+hgvm ku	lkj@lkj		swimming,fishing	vegi	advanced	Rock (can't swim)	NO	0
+hgvm ku	lkj@lkj		swimming,fishing,kayaking	vegi	advanced	Rock (can't swim)	NO	4
+hgvm ku	lkj@lkj		swimming,kayaking	vegi	advanced	Rock (can't swim)	NO	4
+hgvm ku	lkj@lkj		swimming,kayaking	vegi	advanced	Rock (can't swim)	NO	4
+hgvm ku	lkj@lkj	g	swimming,kayaking	vegi	advanced	Rock (can't swim)	NO	4
+hgvm ku	lkj@lkj		swimming,kayaking	vegi	advanced	Rock (can't swim)	NO	4
+hgvm ku	lkj@lkj		swimming,kayaking	vegi	advanced	Rock (can't swim)	NO	4
+hgvm ku	lkj@lkj	f	swimming,kayaking	vegi	advanced	Rock (can't swim)	NO	4
+hgvm ku	lkj@lkj	fY6	swimming,kayaking	vegi	advanced	Rock (can't swim)	NO	4
