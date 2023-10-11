@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<!-- Lab 05 page-->
+
+<html lang="en">
+
+<!-- CSS and meta information-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Charlie Francesconi">
+  <link rel="stylesheet" href="../styles.css">
+  <title>Camp Login</title>
+  <style>
+    body {
+    text-align: center;
+    }
+    datalist {
+      color: white;
+    }
+  </style>
+</head>
+
+
+<body>
+  <script>
+    // Source: https://codepen.io/lenmorld/pen/GvWgGE
+  </script>
+  <!-- Website title -->
+  <h1>Log into Camp Registration</h1>
+  <form method="post" action="login.php">
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" placeholder="jappleseed@apple.com" required><br>
+    <label for="password" title="Optional: if you would like to modify your camp reservation at a later time">Password:</label>
+    <input type="password" name="password" id="password"><br><br>
+    <input type="submit" value="Log In">
+  </form>
+</body>

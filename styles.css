@@ -23,7 +23,51 @@ table, th, td {
     table-layout: center;
 }
 
-/* taken from google add-on stylesheet: https://ssl.gstatic.com/docs/script/css/add-ons1.css */
+ul.nav {
+  list-style-type: none;
+  margin: 100;
+  padding: 5;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li.nav {
+  float: left;
+}
+
+.demo {
+  background-color: greenyellow;
+  color: peru;
+  margin-top: 100;
+  padding-right: 100;
+  border: purple solid;
+  text-decoration: wavy;
+  text-align: justify;
+  font-size: 30;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: lighter;
+  float: right;
+}
+
+.demo2 {
+  background-color: white;
+  color: red;
+  margin-top: 200;
+  padding-right: 50;
+  border: blue dashed;
+  text-decoration: double;
+  text-align: right;
+  font-size: 15;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-weight: bold;
+  float: right;
+}
+
+/* taken from google add-on stylesheets: https://ssl.gstatic.com/docs/script/css/add-ons1.css */
+/* I refuse to change any of this because I am in love with the design of this stylesheet.
+  For the purposes of this assignment, I will explain in comments the different elements
+  required in comments to demonstrate that I do actually know what is going on.*/
+
 a {
     color: #15c;
     cursor: pointer;
@@ -31,8 +75,10 @@ a {
   }
   
   a:hover {
+    /* here the text-decoration is used to apply an underline effect to hyperlinks
+      when they are hovered over*/
     text-decoration: underline;
-  }
+  } 
 
   /* TABLES */
 
@@ -42,7 +88,10 @@ table {
   
   th {
     border-bottom: 1px solid #acacac;
+    /* here the boldness of headers is actually less than the default and set to
+    normal, rather than bold weight*/
     font-weight: normal;
+    /* table headers are set to align to the left side of their cells*/
     padding: 2px 0 11px 0;
     text-align: left;
   }
@@ -60,6 +109,7 @@ table {
   table.layout td {
     border: 0;
     padding: 0;
+    /* table data is set to align vertically to the top of each cell*/
     vertical-align: top;
   }
   
@@ -86,6 +136,7 @@ table {
     color: #333;
     cursor: default;
     font-family: arial, sans-serif;
+    /* here the size of the text next to buttons is adjusted to fit their height*/
     font-size: 11px;
     font-weight: bold;
     height: 29px;
@@ -393,6 +444,9 @@ table {
     border-radius: 1px;
     height: 13px;
     left: 1px;
+    /* here the margin of the checkbox is expanded on the top, right, bottom,
+    and left to create space between checkboxes and other elements note that
+    here the bottom and left margins are not adjusted*/
     margin: 2px 8px 0 0;
     outline: 0;
     position: relative;
@@ -521,6 +575,9 @@ table {
     margin: 0;
     min-width: 72px;
     outline: 0;
+    /*Padding is the space between an element's border and the element's content.
+      Here the border is adjusted from the top, right, left, and then bottom.
+      For the selects this is done to offset the grey border defined above*/
     padding: 7px 19px 7px 4px;
     text-align: center;
     text-indent: .01px;
@@ -649,10 +706,9 @@ table {
     height: auto;
     padding: 0;
   }
-  
+  /*
   select[multiple]:disabled
   select[size]: disabled {
     background: #fff;
     opacity: 1;
-  }
-  
+  }*/

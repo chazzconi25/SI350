@@ -23,12 +23,16 @@
 
 <body>
     <?php
+    
       require('utilFunctions.inc.php');
+      
       $log = fopen("LOG.txt", "a") or die("Unable to open file!");
+      
       //https://stackoverflow.com/questions/4857182/best-way-to-determine-if-a-file-is-empty-php
       if ((filesize("LOG.txt")) == 0) {
         fwrite($log, "Name\tEmail\tPassword\tActivities\tdiet\tHiking Ability\tSwimming Ability\tComments\tExcitment Level\n");
       }
+      
       
       //chmod($log, 777); 
       $responses = array($_POST['name'], $_POST['email'], $_POST['password'],
@@ -40,8 +44,12 @@
       for($i = 0; $i < strlen($responses[2]); $i++) {
         $hidden .= "*";
       }
-      $responses[3] = listToString($responses[3]);
+
+      if($responses[3] != "") {
+        $responses[3] = listToString($responses[3]);
+      }
       $pass = $responses[2];
+      
       if(pCheck($pass)) {
         $error = "";
         if(preg_match("/(?=.*?[0-9])/", $pass) == 0) {
