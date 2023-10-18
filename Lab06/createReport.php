@@ -32,6 +32,14 @@
             $fileName = 'LOG.txt';
             $fp = fopen($fileName, 'r');   //open the file for reading
             if (!$fp) {                    //check that file opened ok
+            echo"<ul class = \"nav\">
+                <li class = \"nav\"><a class=\"active\" href=\"index.html\">Home</a></li>
+                <li class = \"nav\"><a href=\"login.php\">Login</a></li>
+                <li class = \"nav\"><a href=\"logout.php\">Logout</a></li>
+                <li class = \"nav\"><a href=\"schedule.html\">Schedule</a></li>
+                <li class = \"nav\"><a href=\"registration.html\">Register</a></li>
+                <li class = \"nav\"><a href=\"requestReport.php\">View Camp Data</a></li>
+              </ul>";
             echo "<p>ERROR! Could not open file $fileName for reading.</p>";
             } else {
                 while ($row = fgetcsv($fp, null,"\t")) {
@@ -45,6 +53,14 @@
                 }
             }
             array_multisort(array_column($cData, 0), SORT_ASC, $cData);
+            echo"<ul class = \"nav\">
+            <li class = \"nav\"><a class=\"active\" href=\"index.html\">Home</a></li>
+            <li class = \"nav\"><a href=\"login.php\">Login</a></li>
+            <li class = \"nav\"><a href=\"logout.php\">Logout</a></li>
+            <li class = \"nav\"><a href=\"schedule.html\">Schedule</a></li>
+            <li class = \"nav\"><a href=\"registration.html\">Register</a></li>
+            <li class = \"nav\"><a href=\"requestReport.php\">View Camp Data</a></li>
+            </ul>";
             echo "<table>";
             echo "<tr>";
             echo "<h2>Below are the ". count($cData) ." campers who are $diet diet, sorted alphabetically by name</h2>";
@@ -70,6 +86,14 @@
             
             fclose($fp);                   //close the file
         } else {
+            echo"<ul class = \"nav\">
+            <li class = \"nav\"><a class=\"active\" href=\"index.html\">Home</a></li>
+            <li class = \"nav\"><a href=\"login.php\">Login</a></li>
+            <li class = \"nav\"><a href=\"logout.php\">Logout</a></li>
+            <li class = \"nav\"><a href=\"schedule.html\">Schedule</a></li>
+            <li class = \"nav\"><a href=\"registration.html\">Register</a></li>
+            <li class = \"nav\"><a href=\"requestReport.php\">View Camp Data</a></li>
+          </ul>";
             echo "<h1>Unauthorized access</h1>";
             echo "<h2><a href=\"login.html\">login here</a></h2>";
         }

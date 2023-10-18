@@ -24,6 +24,14 @@
 <body>
 
   <?php
+  echo "<ul class = \"nav\">
+  <li class = \"nav\"><a class=\"active\" href=\"index.html\">Home</a></li>
+  <li class = \"nav\"><a href=\"login.php\">Login</a></li>
+  <li class = \"nav\"><a href=\"logout.php\">Logout</a></li>
+  <li class = \"nav\"><a href=\"schedule.html\">Schedule</a></li>
+  <li class = \"nav\"><a href=\"registration.html\">Register</a></li>
+  <li class = \"nav\"><a href=\"requestReport.php\">View Camp Data</a></li>
+  </ul>";
   session_start();
   if (isset($_SESSION['email'])) {
       echo "

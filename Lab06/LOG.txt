@@ -1,5 +1,2 @@
 Name	Email	Password	Activities	diet	Hiking Ability	Swimming Ability	Comments	Excitment Level
-Steven	steve@test	test123B	swimming,kayaking	omni	beginner	Advanced (can swim 500m and tread water)	yes	3
-test	test@test	5465asdasdSDAD	swimming,kayaking	omni	expert	Rock (can't swim)	NOINFISA	9
-charlie	c@gmail.com	Pass123	fishing	vegi	advanced	Advanced (can swim 500m and tread water)	My password is Pass123	7
-t	t@t	Tt1	fishing	omni	expert	Advanced (can swim 500m and tread water)	Tt1	10
+t	t@t	Tt1	swimming,kayaking	pesca	advanced	Beginner (can float and tread water)	no	5
