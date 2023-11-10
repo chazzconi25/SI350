@@ -119,14 +119,16 @@
                 if(array_key_exists($i, $_SESSION["arr"])) {
                     $addlprinc += $_SESSION["arr"][$i];
                 }
-                
                 for($j = 0; $j < 12; $j++) {
-                    $eomBal += $addlprinc + round(($rate/ 100.0 / 12.0) * $addlprinc,2);
+                    $eomBal += $addlprinc;
+                    $eomBal += ($rate/ 100.0 / 12.0) * $eomBal;
+                    $initial += $addlprinc;
+                    $initial += ($rate/ 100.0 / 12.0) * $initial;
                     echo("<tr><td>". $i ."</td><td>"
                         . $j+1 ."</td><td>"
                         . $addlprinc ."</td><td>"
-                        . $eomBal . "</td><td>"
-                        . $eomBal + $initial. "</td><td></tr>");
+                        . number_format($eomBal, 2, ".","") . "</td><td>"
+                        . number_format($initial, 2, ".","") . "</td><td></tr>");
                 }
             }
         ?>
