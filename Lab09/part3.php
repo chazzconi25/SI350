@@ -91,6 +91,48 @@
             echo($_SESSION["table"]);
         ?>
     </table>
+    <table>
+        <tr>
+            <th>
+                Year
+            </th>
+            <th>
+                Month
+            </th>
+            <th>
+                Additional Principle
+            </th>
+            <th>
+                EOM Balance
+            </th>
+            <th>
+                EOM Balance with Initial Investment
+            </th>
+        </tr>
+        <?php
+            $rate = formProcessInt("roi");
+            $initial = formProcessInt("initial");
+            $years = formProcessInt("years");
+            $addlprinc= 0.0;
+            $eomBal = 0;
+            for($i = 0; $i < $years; $i++) {
+                if(array_key_exists($i, $_SESSION["arr"])) {
+                    $addlprinc += $_SESSION["arr"][$i];
+                }
+                for($j = 0; $j < 12; $j++) {
+                    $eomBal += $addlprinc;
+                    $eomBal += ($rate/ 100.0 / 12.0) * $eomBal;
+                    $initial += $addlprinc;
+                    $initial += ($rate/ 100.0 / 12.0) * $initial;
+                    echo("<tr><td>". $i ."</td><td>"
+                        . $j+1 ."</td><td>"
+                        . $addlprinc ."</td><td>"
+                        . number_format($eomBal, 2, ".","") . "</td><td>"
+                        . number_format($initial, 2, ".","") . "</td><td></tr>");
+                }
+            }
+        ?>
+    </table>
 
 
 </body>
