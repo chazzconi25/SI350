@@ -22,3 +22,4 @@ hgvm ku	lkj@lkj		swimming,kayaking	vegi	advanced	Rock (can't swim)	NO	4
 hgvm ku	lkj@lkj		swimming,kayaking	vegi	advanced	Rock (can't swim)	NO	4
 hgvm ku	lkj@lkj	f	swimming,kayaking	vegi	advanced	Rock (can't swim)	NO	4
 hgvm ku	lkj@lkj	fY6	swimming,kayaking	vegi	advanced	Rock (can't swim)	NO	4
+stts	t@tg	asdasd23@SD	swimming,kayaking	pesca	advanced	Rock (can't swim)	sda	10
