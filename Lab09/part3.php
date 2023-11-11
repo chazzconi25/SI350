@@ -31,7 +31,6 @@
 <html lang="en">
 <!-- CSS and meta information-->
 <head>
-
     <meta charset="utf-8" />
     <meta name="author" content="Charlie Francesconi">
     <link rel="stylesheet" href="../styles.css">
