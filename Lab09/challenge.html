@@ -17,22 +17,24 @@
         }
         </style>
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
 
     <body>
-        <form>
+        <form id="form">
             <label for="years">Years to Calculate:</label>
-            <input type="number" name="years" id="years" value=<?php keepVal("years")?>><br>
+            <input type="number" name="years" id="years" ><br>
             <label for="roi">Expected Rate of Return:</label>
-            <input type="number" name="roi" id="roi" value=<?php keepVal("roi")?>><br>
+            <input type="number" name="roi" id="roi" ><br>
             <label for="initial">Initial Investment:</label>
-            <input type="number" name="initial" id="initial" value=<?php keepVal("initial")?>><br>
+            <input type="number" name="initial" id="initial" ><br>
             <label>Additional Investment:</label>
             <label for="ystrt">Start at Year:</label>
             <input type="number" name="ystrt" id="ystrt">
             <label for="pmnth">Additional amount per month:</label>
             <input type="number" name="pmnth" id="pmnth"><br>
-            <input type ="submit" value="Calculate" name="calculate" id="calculate">
+            <button onclick="getFormValues()">Calculate</button>
+            <!--<input type ="submit" value="Calculate" name="calculate" id="calculate">-->
             <input type ="submit" value="Start Over" name="reset" id="reset">
         </form>
         <table>
@@ -45,26 +47,17 @@
                 </th>
             </tr>
         </table>
-        <script type="text/javascript">
-            var json_data = [];
-            var today = new Date();
-            function addMonths(date, months) {
-                var d = date.getDate();
-                date.setMonth(date.getMonth() + months);
-                if (date.getDate() != d) {
-                    date.setDate(0);
-                }
-                return date;
+        <script type="text/javascript" >
+            function getFormValues() {
+                Array.from(document.querySelectorAll('#form input'));
             }
+            var test = getFormValues();
+            console.log(test);
+            //PUT DATA VALUES INTO A 2D ARR NAMED json_data
 
 
-            //
-            for(var i = 0; i < json_data.length; i++){
-                json_data[i][0] = addMonths(today, json_data[i][0]);
-                today = new Date();
-            }
-            console.log(json_data);
 
+            //BEGIN CHART JS
             google.charts.load('current', {'packages':['corechart','line']});
             google.charts.setOnLoadCallback(drawChart);
             function drawChart() {
@@ -94,6 +87,7 @@
                     chart.draw(data, google.charts.Line.convertOptions(options));
             }
         </script>
+        <div id=result></div>
         <div id="linechart_material" ></div>
     </body>
 
